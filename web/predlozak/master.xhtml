@@ -10,14 +10,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         
         <h:outputStylesheet name="css/w3.css" library="resources"/>
+        <!--<h:outputStylesheet name="css/custom.css" library="resources"/>  -->      
         <h:outputStylesheet name="css/w3-theme-blue-gray.css" library="resources"/>
-        <h:outputScript name="js/myJS.js" library="resources"/>
+        <h:outputStylesheet name="metis/metisMenu.css" library="resources"/>
+        <h:outputStylesheet library="resources" name="font-awesome-4.6.3/css/font-awesome.min.css" />
+        <!--
+        <h:outputStylesheet name="bootstrap/css/bootstrap.css" library="resources"/>
+        -->
+        <h:outputStylesheet library="webjars" name="/bootstrap/3.3.6/css/bootstrap.min-jsf.css"/>
         <h:outputScript name="bootstrap/js/jquery-2.2.4.min.js" library="resources"/>
         <h:outputScript name="bootstrap/js/bootstrap.min.js" library="resources"/>
-        <h:outputStylesheet library="resources" name="font-awesome-4.6.3/css/font-awesome.min.css" />
         
-        <h:outputStylesheet name="bootstrap/css/bootstrap.css" library="resources"/>
-       
+        
+        
+        <!--
+        <h:outputScript library="webjars" name="/bootstrap/3.3.6/js/bootstrap.min.js"/>
+        <h:outputScript library="webjars" name="/jquery/2.1.4/jquery.min.js"/>
+        -->
+
+        <h:outputScript name="js/myJS.js" library="resources"/>
+        
+        <!-- <h:outputScript name="js/jquery.metisMenu.js" library="resources"/>-->
+        <h:outputScript name="metis/metisMenu.js" library="resources"/>
+        
+        
+        
         <!--<h:outputStylesheet name="css/Forme.css" library="resources"/>-->
         <link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'/>
         
@@ -79,6 +96,8 @@
         <!--ovdje dodje kraj prvog c ifa -->
         <c:if test="${LogIn.testRegistracije != true }" > <comp:error/> </c:if>
         </ui:remove>
+        
+        
     </h:body>
 </html>
 
